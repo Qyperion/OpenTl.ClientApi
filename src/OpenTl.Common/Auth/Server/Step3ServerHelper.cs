@@ -6,16 +6,16 @@
 
     using DotNetty.Buffers;
 
-    using OpenTl.Common.Crypto;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Serialization;
+    using Crypto;
+    using Schema;
+    using Schema.Serialization;
 
     using Org.BouncyCastle.Crypto;
     using Org.BouncyCastle.Crypto.Parameters;
     using Org.BouncyCastle.Math;
     using Org.BouncyCastle.Security;
     
-    using OpenTl.Common.GuardExtensions;
+    using GuardExtensions;
 
     public static class Step3ServerHelper
     {

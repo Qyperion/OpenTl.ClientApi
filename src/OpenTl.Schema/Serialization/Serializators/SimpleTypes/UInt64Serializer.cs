@@ -4,7 +4,7 @@ namespace OpenTl.Schema.Serialization.Serializators.SimpleTypes
 
     using DotNetty.Buffers;
 
-    using OpenTl.Schema.Serialization.Serializators.Interfaces;
+    using Interfaces;
 
     internal class UInt64Serializer : ISerializator
     {

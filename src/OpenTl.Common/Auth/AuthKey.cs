@@ -4,7 +4,7 @@
 
     using BarsGroup.CodeGuard;
 
-    using OpenTl.Common.Crypto;
+    using Crypto;
 
     public sealed class AuthKey
     {

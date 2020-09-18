@@ -549,7 +549,7 @@
         public void Init(bool forEncryption, byte[] key)
         {
             _workingKey = GenerateWorkingKey(key, forEncryption);
-            this._forEncryption = forEncryption;
+            _forEncryption = forEncryption;
         }
 
         public int GetBlockSize()

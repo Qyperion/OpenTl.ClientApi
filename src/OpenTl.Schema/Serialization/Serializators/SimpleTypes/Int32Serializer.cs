@@ -4,7 +4,7 @@
 
     using DotNetty.Buffers;
 
-    using OpenTl.Schema.Serialization.Serializators.Interfaces;
+    using Interfaces;
 
     internal class Int32Serializer : ISerializator
     {

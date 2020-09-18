@@ -4,7 +4,7 @@ namespace OpenTl.Schema.Serialization.Serializators.ObjectTypes
 
     using DotNetty.Buffers;
 
-    using OpenTl.Schema.Serialization.Serializators.Interfaces;
+    using Interfaces;
 
     internal class RsaPublicKeySerializer : ISerializator
     {

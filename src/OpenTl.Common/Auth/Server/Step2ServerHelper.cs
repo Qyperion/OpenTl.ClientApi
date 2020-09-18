@@ -8,11 +8,11 @@
     using DotNetty.Buffers;
     using DotNetty.Common.Utilities;
 
-    using OpenTl.Common.Crypto;
-    using OpenTl.Common.Extensions;
-    using OpenTl.Common.GuardExtensions;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Serialization;
+    using Crypto;
+    using Extensions;
+    using GuardExtensions;
+    using Schema;
+    using Schema.Serialization;
 
     using Org.BouncyCastle.Crypto;
     using Org.BouncyCastle.Crypto.Parameters;

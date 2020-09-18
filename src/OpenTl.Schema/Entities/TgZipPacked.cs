@@ -1,6 +1,6 @@
 ﻿namespace OpenTl.Schema
 {
-    using OpenTl.Schema.Serialization.Attributes;
+    using Serialization.Attributes;
 
     [Serialize(0x3072cfa1)]
     public sealed class TgZipPacked: IObject

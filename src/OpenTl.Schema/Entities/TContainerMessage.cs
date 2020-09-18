@@ -1,6 +1,6 @@
 ﻿namespace OpenTl.Schema
 {
-    using OpenTl.Schema.Serialization.Attributes;
+    using Serialization.Attributes;
 
     public sealed class TContainerMessage
     {

@@ -6,8 +6,8 @@
     using System.Linq;
     using System.Reflection;
 
-    using OpenTl.Schema.Serialization.Attributes;
-    using OpenTl.Schema.Serialization.Serializators.Interfaces;
+    using Attributes;
+    using Serializators.Interfaces;
 
     internal static class SerializationMap
     {

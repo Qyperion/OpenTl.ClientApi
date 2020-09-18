@@ -4,7 +4,7 @@
     using System.Collections;
     using System.Collections.Generic;
 
-    using OpenTl.Schema.Serialization.Attributes;
+    using Serialization.Attributes;
 
     [Serialize(0x1cb5c415)]
     public sealed class TVector<T> : IObject,

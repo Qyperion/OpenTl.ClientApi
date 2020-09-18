@@ -10,7 +10,7 @@ namespace OpenTl.Common.MtProto
     using DotNetty.Buffers;
     using DotNetty.Common.Utilities;
 
-    using OpenTl.Common.Extensions;
+    using Extensions;
 
     using Org.BouncyCastle.Security;
 

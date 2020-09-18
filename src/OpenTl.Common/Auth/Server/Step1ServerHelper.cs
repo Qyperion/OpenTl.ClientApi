@@ -2,8 +2,8 @@
 {
     using System;
 
-    using OpenTl.Schema;
-    using OpenTl.Schema.Serialization;
+    using Schema;
+    using Schema.Serialization;
 
     using Org.BouncyCastle.Math;
 

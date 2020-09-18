@@ -8,8 +8,8 @@ namespace OpenTl.Schema.Serialization.Serializators.ObjectTypes
 
     using DotNetty.Buffers;
 
-    using OpenTl.Schema.Serialization.Attributes;
-    using OpenTl.Schema.Serialization.Serializators.Interfaces;
+    using Attributes;
+    using Interfaces;
 
     // ReSharper disable once InconsistentNaming
     internal class IObjectSerializer : ISerializator

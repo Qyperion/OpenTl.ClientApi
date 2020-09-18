@@ -38,7 +38,7 @@ namespace OpenTl.Common.Crypto
         private Crc32(uint polynomial, uint seed)
         {
             _table = InitializeTable(polynomial);
-            this._seed = _hash = seed;
+            _seed = _hash = seed;
         }
 
         public override void Initialize()

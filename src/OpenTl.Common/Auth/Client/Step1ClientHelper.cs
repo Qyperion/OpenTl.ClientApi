@@ -2,7 +2,7 @@
 {
     using System;
 
-    using OpenTl.Schema;
+    using Schema;
 
     public static class Step1ClientHelper
     {
