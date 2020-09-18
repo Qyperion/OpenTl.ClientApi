@@ -6,8 +6,8 @@ namespace OpenTl.ClientApi.Settings
 
     using NullGuard;
 
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.Common.Auth;
+    using MtProto;
+    using Common.Auth;
     using OpenTl.Common.Extensions;
 
     internal sealed class ClientSession : IClientSession

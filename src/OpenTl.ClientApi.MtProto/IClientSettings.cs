@@ -1,6 +1,6 @@
 ﻿namespace OpenTl.ClientApi.MtProto
 {
-    using OpenTl.Schema;
+    using Schema;
 
     public interface IClientSettings
     {

@@ -4,8 +4,8 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.Schema;
-    using OpenTl.Schema.Contacts;
+    using Schema;
+    using Schema.Contacts;
 
     // <summary>Working with contacts</summary>
     public interface IContactsService

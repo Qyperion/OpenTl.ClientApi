@@ -1,6 +1,6 @@
 ﻿namespace OpenTl.ClientApi
 {
-    using OpenTl.ClientApi.MtProto;
+    using MtProto;
 
     /// <summary>Information about your application</summary>
     public sealed class ApplicationProperties : IApplicationProperties

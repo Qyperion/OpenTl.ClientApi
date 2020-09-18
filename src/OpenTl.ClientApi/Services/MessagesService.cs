@@ -10,15 +10,15 @@
 
     using NullGuard;
 
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
+    using Extensions;
+    using MtProto;
+    using Interfaces;
     using OpenTl.Common.Extensions;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Messages;
+    using Common.IoC;
+    using Schema;
+    using Schema.Messages;
 
-    using IChatFull = OpenTl.Schema.Messages.IChatFull;
+    using IChatFull = Schema.Messages.IChatFull;
 
     [SingleInstance(typeof(IMessagesService))]
     internal class MessagesService : IMessagesService

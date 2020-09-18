@@ -6,7 +6,7 @@
 
     using DotNetty.Transport.Channels;
 
-    using OpenTl.Common.IoC;
+    using Common.IoC;
 
     [SingleInstance(typeof(ISecureHandler))]
     internal sealed class AutoFlushHandlerAdapater: ChannelHandlerAdapter, ISecureHandler, IDisposable

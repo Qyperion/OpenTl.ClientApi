@@ -5,12 +5,12 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Contacts;
+    using Extensions;
+    using MtProto;
+    using Interfaces;
+    using Common.IoC;
+    using Schema;
+    using Schema.Contacts;
 
     [SingleInstance(typeof(IContactsService))]
     internal class ContactsService : IContactsService

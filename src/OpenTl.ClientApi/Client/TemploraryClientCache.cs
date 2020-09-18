@@ -5,9 +5,9 @@
 
     using Microsoft.Extensions.Caching.Memory;
 
-    using OpenTl.ClientApi.Client.Interfaces;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.Common.IoC;
+    using Interfaces;
+    using MtProto;
+    using Common.IoC;
 
     [SingleInstance(typeof(ITemploraryClientCache))]
     internal class TemploraryClientCache : ITemploraryClientCache

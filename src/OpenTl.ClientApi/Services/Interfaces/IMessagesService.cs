@@ -4,10 +4,10 @@ namespace OpenTl.ClientApi.Services.Interfaces
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.Schema;
-    using OpenTl.Schema.Messages;
+    using Schema;
+    using Schema.Messages;
 
-    using IChatFull = OpenTl.Schema.Messages.IChatFull;
+    using IChatFull = Schema.Messages.IChatFull;
 
     public interface IMessagesService
     {

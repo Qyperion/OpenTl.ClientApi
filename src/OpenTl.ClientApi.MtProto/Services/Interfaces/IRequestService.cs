@@ -5,7 +5,7 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.Schema;
+    using Schema;
 
     internal interface IRequestService
     {

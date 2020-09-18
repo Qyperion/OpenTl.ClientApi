@@ -1,30 +1,20 @@
 ﻿namespace OpenTl.ClientApi.Services
 {
-    using System.Linq;
-    using System.Security.Cryptography;
-    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
 
     using BarsGroup.CodeGuard;
+    using MtProto;
+    using Interfaces;
+    using Common.IoC;
+    using Schema;
+    using Schema.Auth;
 
-    using log4net;
-
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
-    using OpenTl.ClientApi.Settings;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Account;
-    using OpenTl.Schema.Auth;
-
-    using TAuthorization = OpenTl.Schema.Auth.TAuthorization;
+    using TAuthorization = Schema.Auth.TAuthorization;
 
     [SingleInstance(typeof(IAuthService))]
     internal sealed class AuthService : IAuthService
     {
-        private static readonly ILog Log = LogManager.GetLogger(typeof(AuthService));
-
         public IRequestSender RequestSender { get; set; }
 
         public IClientSettings ClientSettings { get; set; }
@@ -35,35 +25,6 @@
         
         /// <inheritdoc />
         public int? CurrentUserId => ClientSettings.ClientSession.UserId;
-
-//        /// <inheritdoc />
-//        public async Task<TUser> CheckCloudPasswordAsync(string password, CancellationToken cancellationToken = default(CancellationToken))
-//        {
-//            Guard.That(password, nameof(password)).IsNotNullOrWhiteSpace();
-//
-//            var passwordBytes = Encoding.UTF8.GetBytes(password);
-//
-//            var pwd = (TPassword)await RequestSender.SendRequestAsync(new RequestGetPassword(), cancellationToken).ConfigureAwait(false);
-//            var rv = pwd.CurrentSalt.Concat(passwordBytes).Concat(pwd.CurrentSalt);
-//
-//            byte[] passwordHash;
-//            using (var sha = SHA256.Create())
-//            {
-//                passwordHash = sha.ComputeHash(rv.ToArray());
-//            }
-//
-//            var request = new RequestCheckPassword
-//                          {
-//                              PasswordHash = passwordHash
-//                          };
-//            var result = (TAuthorization)await RequestSender.SendRequestAsync(request, cancellationToken).ConfigureAwait(false);
-//
-//            var user = result.User.Is<TUser>();
-//
-//            await OnUserAuthenticated(user).ConfigureAwait(false);
-//
-//            return user;
-//        }
 
         /// <inheritdoc />
         public async Task<ISentCode> SendCodeAsync(string phoneNumber, CancellationToken cancellationToken = default(CancellationToken))

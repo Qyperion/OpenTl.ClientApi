@@ -8,8 +8,8 @@
 
     using log4net;
 
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IMessageHandler))]
     internal sealed class MsgContainerHandler : MessageToMessageDecoder<MsgContainer>,

@@ -4,8 +4,8 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.Schema;
-    using OpenTl.Schema.Photos;
+    using Schema;
+    using Schema.Photos;
 
     public interface IUsersService
     {

@@ -8,12 +8,12 @@
     using NullGuard;
 
     using OpenTl.ClientApi.Client.Interfaces;
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Auth;
+    using Extensions;
+    using MtProto;
+    using Interfaces;
+    using Common.IoC;
+    using Schema;
+    using Schema.Auth;
 
     [SingleInstance(typeof(ICustomRequestsService))]
     internal class CustomRequestsService : ICustomRequestsService

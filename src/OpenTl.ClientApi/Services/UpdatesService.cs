@@ -7,11 +7,11 @@ namespace OpenTl.ClientApi.Services
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema.Updates;
+    using Extensions;
+    using MtProto;
+    using Interfaces;
+    using Common.IoC;
+    using Schema.Updates;
 
     [SingleInstance(typeof(IUpdatesService), typeof(IAutoUpdatesHandler))]
     internal class UpdatesService : IUpdatesService, IAutoUpdatesHandler, IDisposable

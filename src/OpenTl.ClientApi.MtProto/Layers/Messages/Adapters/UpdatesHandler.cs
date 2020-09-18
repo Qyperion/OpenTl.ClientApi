@@ -4,8 +4,8 @@ namespace OpenTl.ClientApi.MtProto.Layers.Messages.Adapters
 {
     using DotNetty.Transport.Channels;
 
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IMessageHandler))]
     internal sealed class UpdatesHandler : SimpleChannelInboundHandler<IUpdates>, IMessageHandler

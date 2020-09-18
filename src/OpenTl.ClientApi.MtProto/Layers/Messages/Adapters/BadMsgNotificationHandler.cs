@@ -1,17 +1,15 @@
 ﻿namespace OpenTl.ClientApi.MtProto.Layers.Messages.Adapters
 {
-    using System;
-
     using DotNetty.Transport.Channels;
 
     using log4net;
 
     using Newtonsoft.Json;
 
-    using OpenTl.ClientApi.MtProto.Exceptions;
+    using Exceptions;
     using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IMessageHandler))]
     internal sealed class BadMsgNotificationHandler : SimpleChannelInboundHandler<TBadMsgNotification>,

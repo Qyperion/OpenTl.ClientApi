@@ -6,12 +6,12 @@
 
     using log4net;
 
-    using OpenTl.ClientApi.MtProto.Extensions;
+    using Extensions;
     using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
+    using Common.IoC;
     using OpenTl.Common.MtProto;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Serialization;
+    using Schema;
+    using Schema.Serialization;
 
     [SingleInstance(typeof(ISecureHandler))]
     internal sealed class SecureRequestEncoder: MessageToByteEncoder<IObject>,

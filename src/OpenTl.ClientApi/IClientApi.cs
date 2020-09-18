@@ -1,9 +1,7 @@
 ﻿namespace OpenTl.ClientApi
 {
     using System;
-
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
+    using Services.Interfaces;
 
     /// <summary>Entry point to client API MtProto protocol</summary>
     public interface IClientApi : IDisposable

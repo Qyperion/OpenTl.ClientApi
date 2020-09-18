@@ -5,11 +5,11 @@
 
     using NullGuard;
 
-    using OpenTl.ClientApi.MtProto.Extensions;
+    using Extensions;
     using OpenTl.ClientApi.MtProto.Interfaces;
-    using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Interfaces;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IRequestSender))]
     internal class RequestSenderService: IRequestSender

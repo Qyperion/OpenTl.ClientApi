@@ -11,8 +11,8 @@ namespace OpenTl.ClientApi.MtProto.Layers.Handshake.Codecs
 
     using log4net;
 
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema.Serialization;
+    using Common.IoC;
+    using Schema.Serialization;
 
     [TransientInstance(typeof(IHandshakeHandler))]
     internal class HanshakeResponseDecoder: ByteToMessageDecoder, IHandshakeHandler

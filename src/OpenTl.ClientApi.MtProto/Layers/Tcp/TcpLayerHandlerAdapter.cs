@@ -10,9 +10,9 @@
 
     using log4net;
 
-    using OpenTl.Common.Crypto;
+    using Common.Crypto;
     using OpenTl.Common.Extensions;
-    using OpenTl.Common.IoC;
+    using Common.IoC;
 
     [TransientInstance(typeof(ITcpHandler))]
     internal sealed class TcpLayerHandlerAdapter : ChannelHandlerAdapter,

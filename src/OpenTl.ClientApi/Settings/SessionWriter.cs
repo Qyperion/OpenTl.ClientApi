@@ -2,9 +2,9 @@
 {
     using System.Threading.Tasks;
 
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.Common.IoC;
+    using Extensions;
+    using MtProto;
+    using Common.IoC;
 
     [SingleInstance(typeof(ISessionWriter))]
     internal class SessionWriter : ISessionWriter

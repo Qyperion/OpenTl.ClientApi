@@ -1,20 +1,18 @@
 ﻿namespace OpenTl.ClientApi.MtProto.Layers.Handshake.Adapters
 {
     using System;
-    using System.Threading.Tasks;
-
     using BarsGroup.CodeGuard;
 
     using DotNetty.Transport.Channels;
 
     using log4net;
 
-    using OpenTl.ClientApi.MtProto.Enums;
-    using OpenTl.Common.Auth;
-    using OpenTl.Common.Auth.Client;
-    using OpenTl.Common.GuardExtensions;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Enums;
+    using Common.Auth;
+    using Common.Auth.Client;
+    using Common.GuardExtensions;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IHandshakeHandler))]
     internal sealed class HandshakeHandlerAdapter: SimpleChannelInboundHandler<IObject>,

@@ -4,7 +4,7 @@
 
     using Newtonsoft.Json;
 
-    using OpenTl.ClientApi.MtProto;
+    using MtProto;
 
     internal static class SessionExtensions
     {

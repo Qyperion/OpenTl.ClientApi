@@ -8,10 +8,10 @@
     using Castle.MicroKernel.Registration;
     using Castle.Windsor;
 
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Settings;
-    using OpenTl.Common.IoC;
+    using Extensions;
+    using MtProto;
+    using Settings;
+    using Common.IoC;
 
     /// <summary>Entry point to working with the library</summary>
     public static class ClientFactory

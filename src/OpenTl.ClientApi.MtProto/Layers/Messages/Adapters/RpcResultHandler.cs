@@ -3,8 +3,6 @@
     using System;
     using System.Linq;
     using System.Text.RegularExpressions;
-    using System.Threading.Tasks;
-
     using DotNetty.Common.Utilities;
     using DotNetty.Transport.Channels;
 
@@ -12,11 +10,11 @@
 
     using Newtonsoft.Json;
 
-    using OpenTl.ClientApi.MtProto.Exceptions;
+    using Exceptions;
     using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Serialization;
+    using Common.IoC;
+    using Schema;
+    using Schema.Serialization;
 
     [SingleInstance(typeof(IMessageHandler))]
     internal sealed class RpcResultHandler : SimpleChannelInboundHandler<TRpcResult>,

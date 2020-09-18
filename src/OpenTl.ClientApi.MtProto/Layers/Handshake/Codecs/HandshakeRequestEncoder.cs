@@ -7,10 +7,10 @@
 
     using log4net;
 
-    using OpenTl.ClientApi.MtProto.Extensions;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Serialization;
+    using Extensions;
+    using Common.IoC;
+    using Schema;
+    using Schema.Serialization;
 
     [SingleInstance(typeof(IHandshakeHandler))]
     internal sealed class HandshakeRequestEncoder: MessageToByteEncoder<IObject>,

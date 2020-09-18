@@ -5,8 +5,8 @@
     using log4net;
 
     using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IMessageHandler))]
     internal class PongHandler : SimpleChannelInboundHandler<TPong>,

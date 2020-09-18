@@ -18,13 +18,13 @@
 
     using log4net;
 
-    using OpenTl.ClientApi.MtProto.Layers.Handshake;
-    using OpenTl.ClientApi.MtProto.Layers.Messages;
-    using OpenTl.ClientApi.MtProto.Layers.Secure;
-    using OpenTl.ClientApi.MtProto.Layers.Tcp;
-    using OpenTl.ClientApi.MtProto.Layers.Top;
-    using OpenTl.Common.IoC;
-    using OpenTl.Netty.Socks.Handlers;
+    using Layers.Handshake;
+    using Layers.Messages;
+    using Layers.Secure;
+    using Layers.Tcp;
+    using Layers.Top;
+    using Common.IoC;
+    using Netty.Socks.Handlers;
 
     [SingleInstance(typeof(INettyBootstrapper))]
     internal sealed class NettyBootstrapper : INettyBootstrapper

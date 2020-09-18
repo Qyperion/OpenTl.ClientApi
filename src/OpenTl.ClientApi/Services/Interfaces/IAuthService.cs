@@ -2,10 +2,8 @@
 {
     using System.Threading;
     using System.Threading.Tasks;
-
-    using OpenTl.ClientApi.MtProto.Exceptions;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Auth;
+    using Schema;
+    using Schema.Auth;
 
     /// <summary>Registration and authentication</summary>
     public interface IAuthService

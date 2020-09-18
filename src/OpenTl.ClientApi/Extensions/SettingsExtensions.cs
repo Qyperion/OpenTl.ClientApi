@@ -1,7 +1,7 @@
 ﻿namespace OpenTl.ClientApi.Extensions
 {
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.MtProto.Exceptions;
+    using MtProto;
+    using MtProto.Exceptions;
 
     internal static class SettingsExtensions
     {

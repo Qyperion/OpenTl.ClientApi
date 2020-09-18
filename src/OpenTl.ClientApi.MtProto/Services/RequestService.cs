@@ -11,9 +11,9 @@
 
     using NullGuard;
 
-    using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Interfaces;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IRequestService))]
     internal sealed class RequestService : IRequestService

@@ -4,7 +4,7 @@
 
     using NullGuard;
 
-    using OpenTl.ClientApi.MtProto;
+    using MtProto;
     
     /// <inheritdoc />
     public sealed class Socks5ProxyConfig: ISocks5Proxy

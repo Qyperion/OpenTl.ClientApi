@@ -7,9 +7,7 @@
     using log4net;
 
     using NullGuard;
-
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.Common.IoC;
+    using Common.IoC;
 
     [SingleInstance(typeof(ISessionStore))]
     internal sealed class FileSessionStore : ISessionStore

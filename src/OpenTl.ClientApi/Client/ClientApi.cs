@@ -7,8 +7,8 @@
 
     using OpenTl.ClientApi.Services.Interfaces;
     using OpenTl.Common.Extensions;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using Common.IoC;
+    using Schema;
 
     /// <inheritdoc />
     [SingleInstance(typeof(IClientApi))]

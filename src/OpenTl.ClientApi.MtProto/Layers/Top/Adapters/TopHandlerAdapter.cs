@@ -12,14 +12,13 @@
     using log4net;
     using log4net.Util;
 
-    using OpenTl.ClientApi.MtProto.Enums;
-    using OpenTl.ClientApi.MtProto.Extensions;
-    using OpenTl.ClientApi.MtProto.Interfaces;
+    using Enums;
+    using Extensions;
+    using Interfaces;
     using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Auth;
-    using OpenTl.Schema.Help;
+    using Common.IoC;
+    using Schema;
+    using Schema.Help;
 
     [SingleInstance(typeof(ITopLevelHandler), typeof(IContextGetter))]
     internal sealed class TopHandlerAdapter : SimpleChannelInboundHandler<IObject>,

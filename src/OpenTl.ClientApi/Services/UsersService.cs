@@ -5,13 +5,13 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Account;
-    using OpenTl.Schema.Photos;
-    using OpenTl.Schema.Users;
+    using MtProto;
+    using Interfaces;
+    using Common.IoC;
+    using Schema;
+    using Schema.Account;
+    using Schema.Photos;
+    using Schema.Users;
 
     [SingleInstance(typeof(IUsersService))]
     internal class UsersService : IUsersService

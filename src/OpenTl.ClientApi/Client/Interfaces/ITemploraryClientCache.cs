@@ -2,7 +2,7 @@
 {
     using System.Threading.Tasks;
 
-    using OpenTl.ClientApi.MtProto;
+    using MtProto;
 
     internal interface ITemploraryClientCache
     {

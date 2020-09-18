@@ -2,9 +2,9 @@
 {
     using NullGuard;
 
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
+    using MtProto;
+    using Common.IoC;
+    using Schema;
 
     [SingleInstance(typeof(IClientSettings))]
     internal class ClientSettings : IClientSettings

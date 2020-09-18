@@ -3,7 +3,7 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.Schema;
+    using Schema;
 
     public interface IRequestSender
     {

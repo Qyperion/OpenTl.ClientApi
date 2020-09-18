@@ -10,14 +10,14 @@
 
     using NullGuard;
 
-    using OpenTl.ClientApi.Services.Interfaces;
-    using OpenTl.ClientApi.Extensions;
-    using OpenTl.ClientApi.MtProto;
-    using OpenTl.ClientApi.MtProto.Exceptions;
+    using Interfaces;
+    using Extensions;
+    using MtProto;
+    using MtProto.Exceptions;
     using OpenTl.Common.Extensions;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema;
-    using OpenTl.Schema.Upload;
+    using Common.IoC;
+    using Schema;
+    using Schema.Upload;
 
     [SingleInstance(typeof(IFileService))]
     internal sealed class FileService : IFileService

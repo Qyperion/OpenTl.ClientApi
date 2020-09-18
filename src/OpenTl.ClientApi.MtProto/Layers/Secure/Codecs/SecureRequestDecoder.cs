@@ -11,10 +11,10 @@
 
     using log4net;
 
-    using OpenTl.ClientApi.MtProto.Exceptions;
-    using OpenTl.Common.IoC;
+    using Exceptions;
+    using Common.IoC;
     using OpenTl.Common.MtProto;
-    using OpenTl.Schema.Serialization;
+    using Schema.Serialization;
 
     [TransientInstance(typeof(ISecureHandler))]
     internal sealed class SecureRequestDecoder: ByteToMessageDecoder,

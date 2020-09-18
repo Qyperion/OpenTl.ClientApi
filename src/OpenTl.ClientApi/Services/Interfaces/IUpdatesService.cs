@@ -6,7 +6,7 @@ namespace OpenTl.ClientApi.Services.Interfaces
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.Schema.Updates;
+    using Schema.Updates;
 
     public delegate void ManualUpdateHandler(IDifference update);
     

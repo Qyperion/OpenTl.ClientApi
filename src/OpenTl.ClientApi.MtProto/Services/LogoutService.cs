@@ -3,11 +3,11 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using OpenTl.ClientApi.MtProto.Exceptions;
+    using Exceptions;
     using OpenTl.ClientApi.MtProto.Interfaces;
-    using OpenTl.ClientApi.MtProto.Services.Interfaces;
-    using OpenTl.Common.IoC;
-    using OpenTl.Schema.Auth;
+    using Interfaces;
+    using Common.IoC;
+    using Schema.Auth;
 
     [SingleInstance(typeof(ILogoutService))]
     internal class LogoutService: ILogoutService
