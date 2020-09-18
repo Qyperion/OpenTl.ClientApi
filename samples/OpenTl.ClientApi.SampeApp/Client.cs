@@ -50,21 +50,13 @@ namespace OpenTl.ClientApi.SampeApp
             }
             catch (CloudPasswordNeededException)
             {
-
-                ReadLine.PasswordMode = true;
-                
-                var passwordStr = ReadLineHelper.ReadPassword("Write a password:");
-                ReadLine.PasswordMode = false;
-
                 throw new NotSupportedException();
-
-//                _user = await _clientApi.AuthService.CheckCloudPasswordAsync(passwordStr).ConfigureAwait(false);
             }
             catch (PhoneCodeInvalidException)
             {
             }
             
-             _clientApi.UpdatesService.StartReceiveUpdates(TimeSpan.FromSeconds(1));
+            _clientApi.UpdatesService.StartReceiveUpdates(TimeSpan.FromSeconds(1));
         }
     }
 }

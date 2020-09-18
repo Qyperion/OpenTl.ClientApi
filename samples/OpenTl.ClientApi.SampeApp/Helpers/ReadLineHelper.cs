@@ -13,12 +13,12 @@
             return line;
         }
 
-        private static string ReadInternal(string promt)
+        private static string ReadInternal(string promt, bool passwordMode = false)
         {
             string line;
             do
             {
-                line = ReadLine.Read(promt);
+                line = passwordMode ? ReadLine.ReadPassword(promt) : ReadLine.Read(promt);
             }
             while (string.IsNullOrWhiteSpace(line));
 
@@ -27,11 +27,7 @@
 
         public static string ReadPassword(string promt)
         {
-            ReadLine.PasswordMode = true;
-
-            var line = ReadInternal(promt);
-
-            ReadLine.PasswordMode = false;
+            var line = ReadInternal(promt, true);
 
             return line;
         }
