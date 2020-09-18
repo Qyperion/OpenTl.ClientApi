@@ -9,6 +9,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D00B3015-148
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTl.ClientApi", "src\OpenTl.ClientApi\OpenTl.ClientApi.csproj", "{C044C5EB-8B65-4FAF-8B08-9133D799AED9}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTl.Common", "src\OpenTl.Common\OpenTl.Common.csproj", "{D0ED5A48-2A64-45B7-AC62-8AC7709F706F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTl.Schema", "src\OpenTl.Schema\OpenTl.Schema.csproj", "{9978627A-1A51-4466-BC0C-D0355B9E3D6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,14 @@ Global
 		{C044C5EB-8B65-4FAF-8B08-9133D799AED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C044C5EB-8B65-4FAF-8B08-9133D799AED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C044C5EB-8B65-4FAF-8B08-9133D799AED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0ED5A48-2A64-45B7-AC62-8AC7709F706F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0ED5A48-2A64-45B7-AC62-8AC7709F706F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0ED5A48-2A64-45B7-AC62-8AC7709F706F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0ED5A48-2A64-45B7-AC62-8AC7709F706F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9978627A-1A51-4466-BC0C-D0355B9E3D6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9978627A-1A51-4466-BC0C-D0355B9E3D6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9978627A-1A51-4466-BC0C-D0355B9E3D6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9978627A-1A51-4466-BC0C-D0355B9E3D6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
