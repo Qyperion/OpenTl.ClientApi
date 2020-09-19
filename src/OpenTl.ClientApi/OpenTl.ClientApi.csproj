@@ -3,7 +3,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
 
     <Title>Modern OpenTl Telegram Client</Title>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <PackageId>ModernOpenTl.Client</PackageId>
     <Authors>Qyperion, Viktor Borisov</Authors>
     <Company />
@@ -13,9 +13,15 @@
     <PackageProjectUrl>https://github.com/Qyperion</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Qyperion/OpenTl.ClientApi</RepositoryUrl>
     <ApplicationIcon>telegram.ico</ApplicationIcon>
-    <PackageIcon>telegram.ico</PackageIcon>
+    <PackageIcon>telegram.png</PackageIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\telegram.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BarsGroup.CodeGuard" Version="3.2.43" />
     <PackageReference Include="log4net" Version="2.0.10" />
