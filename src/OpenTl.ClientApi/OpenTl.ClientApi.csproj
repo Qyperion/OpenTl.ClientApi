@@ -3,7 +3,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
 
     <Title>Modern OpenTl Telegram Client</Title>
-    <Version>1.1.2</Version>
+    <Version>1.2.0</Version>
     <PackageId>ModernOpenTl.Client</PackageId>
     <Authors>Qyperion, Viktor Borisov</Authors>
     <Company />
@@ -24,12 +24,16 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="BarsGroup.CodeGuard" Version="3.2.43" />
+    <PackageReference Include="Castle.Windsor" Version="5.0.1" />
+    <PackageReference Include="DotNetty.Buffers" Version="0.6.0" />
+    <PackageReference Include="DotNetty.Handlers" Version="0.6.0" />
     <PackageReference Include="log4net" Version="2.0.10" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="3.1.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.8" />
     <PackageReference Include="NullGuard.Fody" Version="3.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\OpenTl.ClientApi.MtProto\OpenTl.ClientApi.MtProto.csproj" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.6.7" />
+    <PackageReference Include="System.Security.Cryptography.Algorithms" Version="4.3.1" />
+    <PackageReference Include="System.Threading.Tasks.Parallel" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\telegram.ico">
