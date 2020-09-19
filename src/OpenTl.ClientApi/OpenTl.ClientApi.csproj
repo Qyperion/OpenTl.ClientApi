@@ -1,6 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
+
+    <Title>Modern OpenTl Telegram Client</Title>
+    <Version>1.1.0</Version>
+    <PackageId>ModernOpenTl.Client</PackageId>
+    <Authors>Qyperion, Viktor Borisov</Authors>
+    <Company />
+    <Product>Modern OpenTl project</Product>
+    <Description>This is a client api using the MtProto protocol to connect the client to a server, such as Telegram Messenger</Description>
+    <PackageTags>opentl telegram mtproto api client</PackageTags>
+    <PackageProjectUrl>https://github.com/Qyperion</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Qyperion/OpenTl.ClientApi</RepositoryUrl>
+    <ApplicationIcon>telegram.ico</ApplicationIcon>
+    <PackageIcon>telegram.ico</PackageIcon>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BarsGroup.CodeGuard" Version="3.2.43" />
@@ -10,5 +24,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\OpenTl.ClientApi.MtProto\OpenTl.ClientApi.MtProto.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\telegram.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>
