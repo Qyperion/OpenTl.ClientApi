@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 3.1.402
         source-url: https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json
       env:
-        NUGET_AUTH_TOKEN: '%NUGET_AUTH_TOKEN%'
+        NUGET_AUTH_TOKEN: ${{ github.token }}
     - name: Install dependencies
       run: dotnet restore
     - name: Build
