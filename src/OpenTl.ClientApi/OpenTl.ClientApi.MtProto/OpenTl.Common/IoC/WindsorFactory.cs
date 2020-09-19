@@ -1,4 +1,6 @@
-﻿namespace OpenTl.Common.IoC
+﻿using System.Linq;
+
+namespace OpenTl.Common.IoC
 {
     using System.Reflection;
 
@@ -16,8 +18,10 @@
 
             container.Register(Component.For<IWindsorContainer>().Instance(container));
             container.Register(Component.For<ILazyComponentLoader>().ImplementedBy<LazyOfTComponentLoader>());
-            
-            container.RegisterPerAttibutes(assemblies);
+
+            var uniqueAssemblies = assemblies.Distinct().ToArray();
+
+            container.RegisterPerAttibutes(uniqueAssemblies);
 
             return container;
         }
