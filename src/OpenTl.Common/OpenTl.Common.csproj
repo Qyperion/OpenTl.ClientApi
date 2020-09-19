@@ -1,16 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
-    <Title>OpenTl commmon library</Title>
-    <Version>1.0.0</Version>
-    <PackageId>OpenTl.Common</PackageId>
-    <Authors>Viktor Borisov</Authors>
-    <Company />
-    <Product>OpenTl project</Product>
-    <Description>Common modules for OpenTl project</Description>
-    <PackageTags>opentl</PackageTags>
-    <PackageProjectUrl>https://github.com/OpenTl</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/OpenTl/OpenTl.Common</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="BarsGroup.CodeGuard" Version="3.2.43" />
