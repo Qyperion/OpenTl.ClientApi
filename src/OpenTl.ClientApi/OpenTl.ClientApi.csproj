@@ -3,7 +3,7 @@
     <TargetFrameworks>netstandard2.1</TargetFrameworks>
 
     <Title>Modern OpenTl Telegram Client</Title>
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <PackageId>ModernOpenTl.Client</PackageId>
     <Authors>Qyperion, Viktor Borisov</Authors>
     <Company />
