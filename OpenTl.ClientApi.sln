@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTl.ClientApi.MtProto", "src\OpenTl.ClientApi.MtProto\OpenTl.ClientApi.MtProto.csproj", "{94412B1F-F2C6-4D9F-9A21-71DDE8B0A8AF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D00B3015-1481-4D88-A077-9CE92D335B8A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTl.ClientApi", "src\OpenTl.ClientApi\OpenTl.ClientApi.csproj", "{C044C5EB-8B65-4FAF-8B08-9133D799AED9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenTl.Common", "src\OpenTl.Common\OpenTl.Common.csproj", "{D0ED5A48-2A64-45B7-AC62-8AC7709F706F}"
@@ -44,10 +42,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{94412B1F-F2C6-4D9F-9A21-71DDE8B0A8AF} = {D00B3015-1481-4D88-A077-9CE92D335B8A}
-		{C044C5EB-8B65-4FAF-8B08-9133D799AED9} = {D00B3015-1481-4D88-A077-9CE92D335B8A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DADB548-B1BD-4CC4-B827-B5B1F97D8B14}

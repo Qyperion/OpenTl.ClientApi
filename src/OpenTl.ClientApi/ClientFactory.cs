@@ -23,7 +23,7 @@
         {
             var container = WindsorFactory.Create(typeof(INettyBootstrapper).GetTypeInfo().Assembly, typeof(IClientApi).GetTypeInfo().Assembly);
 
-            FillSettings(container, factorySettings);
+            await FillSettings(container, factorySettings);
 
             var bootstrapper = container.Resolve<INettyBootstrapper>();
             await bootstrapper.Init();
@@ -59,7 +59,7 @@
             return container.Resolve<IClientApi>();
         }
 
-        private static void FillSettings(IWindsorContainer container, IFactorySettings factorySettings)
+        private static async Task FillSettings(IWindsorContainer container, IFactorySettings factorySettings)
         {
             Guard.That(factorySettings.AppId).IsPositive();
             Guard.That(factorySettings.AppHash).IsNotNullOrWhiteSpace();
@@ -85,14 +85,14 @@
             var sessionStore = container.Resolve<ISessionStore>();
             sessionStore.SetSessionTag(factorySettings.SessionTag);
 
-            settings.ClientSession = TryLoadOrCreateNew(sessionStore, factorySettings);
+            settings.ClientSession = await TryLoadOrCreateNew(sessionStore, factorySettings);
         }
 
-        private static IClientSession TryLoadOrCreateNew(ISessionStore sessionStore, IFactorySettings factorySettings)
+        private static async Task<IClientSession> TryLoadOrCreateNew(ISessionStore sessionStore, IFactorySettings factorySettings)
         {
             var newSession = new ClientSession();
 
-            var sessionData = sessionStore.Load();
+            var sessionData = await sessionStore.Load();
             if (sessionData != null)
             {
                 newSession.FromBytes(sessionData);

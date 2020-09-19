@@ -10,15 +10,21 @@
         {
         }
 
-        public byte[] Load()
+        public Task<byte[]> Load()
         {
-            return _session;
+            return Task.FromResult(_session);
         }
 
         public Task Save(byte[] session)
         {
             _session = session;
             
+            return Task.CompletedTask;
+        }
+
+        public Task Remove()
+        {
+            _session = null;
             return Task.CompletedTask;
         }
 

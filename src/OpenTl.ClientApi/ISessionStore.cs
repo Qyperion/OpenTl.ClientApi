@@ -9,12 +9,16 @@
     {
         /// <summary>Load session</summary>
         /// <returns></returns>
-        byte[] Load();
+        Task<byte[]> Load();
 
         /// <summary>Save session</summary>
         /// <param name="session">Session</param>
         /// <returns>Task</returns>
         Task Save(byte[] session);
+
+        /// <summary>Remove existing session</summary>
+        /// <returns></returns>
+        Task Remove();
 
         /// <summary>Tagging session</summary>
         /// <param name="sessionTag">Tag name</param>

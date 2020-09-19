@@ -24,12 +24,12 @@
         }
 
         [return: AllowNull]
-        public byte[] Load()
+        public async Task<byte[]> Load()
         {
             Log.Debug($"Load session for sessionTag = {_sessionFile}");
-
+            
             return File.Exists(_sessionFile)
-                       ? File.ReadAllBytes(_sessionFile)
+                       ? await File.ReadAllBytesAsync(_sessionFile)
                        : null;
         }
 
@@ -49,7 +49,7 @@
 
             await _semaphore.WaitAsync().ConfigureAwait(false);
 
-            File.WriteAllBytes(_sessionFile, session);
+            await File.WriteAllBytesAsync(_sessionFile, session);
 
             _semaphore.Release();
         }
